@@ -4,7 +4,212 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<style>
+    body {
+        margin: 0;
+        background: #080d1a;
+        color: #ffffff;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 16px;
+        background:
+            radial-gradient(circle at 20% 20%,
+                rgba(59, 130, 246, .18), transparent 35%),
+            radial-gradient(circle at 80% 80%,
+                rgba(139, 92, 246, .20), transparent 35%);
+    }
+
+    .card-box {
+        width: 100%;
+        max-width: 850px;
+        text-align: center;
+        padding: 55px 30px;
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 28px;
+        background: rgba(17, 24, 39, .82);
+        box-shadow: 0 25px 80px rgba(0,0,0,.35);
+        animation: appear .8s ease-out;
+    }
+
+    .status {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 30px;
+        color: #86efac;
+        background: rgba(34,197,94,.12);
+        border: 1px solid rgba(74,222,128,.3);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .icon-circle {
+        width: 100px;
+        height: 100px;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 48px;
+        background: linear-gradient(135deg, #2563eb, #7c3aed);
+        box-shadow: 0 0 45px rgba(99,102,241,.4);
+    }
+
+    h1 {
+        font-size: clamp(32px, 6vw, 55px);
+        line-height: 1.15;
+        font-weight: 800;
+        margin: 15px 0;
+        background: linear-gradient(90deg, #60a5fa, #c4b5fd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+        max-width: 620px;
+        margin: 18px auto;
+        color: #cbd5e1;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .progress-track {
+        max-width: 480px;
+        height: 9px;
+        margin: 30px auto 12px;
+        background: #263247;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        width: 33%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #3b82f6, #a78bfa);
+        animation: progress 1.4s ease-out;
+    }
+
+    .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-top: 42px;
+        text-align: left;
+    }
+
+    .step {
+        padding: 20px 15px;
+        border: 1px solid rgba(255,255,255,.1);
+        border-radius: 16px;
+        background: rgba(255,255,255,.035);
+    }
+
+    .step span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .step strong {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .step small {
+        color: #94a3b8;
+        line-height: 1.5;
+    }
+
+    .completed {
+        border-color: rgba(74,222,128,.35);
+    }
+
+    .footer {
+        margin-top: 35px;
+        color: #94a3b8;
+        font-size: 13px;
+    }
+
+    @@keyframes appear {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @@keyframes progress {
+        from { width: 0; }
+        to { width: 33%; }
+    }
+
+    @@media (max-width: 600px) {
+        .card-box { padding: 35px 18px; }
+        .steps { grid-template-columns: 1fr; }
+    }
+</style>
+
+<div class="hero">
+    <main class="card-box">
+
+        <div class="status">● FIRST MILESTONE COMPLETED</div>
+
+        <div class="icon-circle">🚀</div>
+
+        <h1>Bhai, Maine CI/CD Ka<br />First Stage Complete Kar Liya Hai!</h1>
+
+        <p class="subtitle">
+            Shuruaat ho chuki hai bhai! Apne application ko
+            automated build aur deployment ki taraf le jaane ka
+            pehla milestone complete kar liya hai.
+            <br />
+            <strong>One step closer to seamless deployment.</strong>
+        </p>
+
+        <div class="progress-track">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div style="color:#94a3b8;font-size:13px;">
+            THE JOURNEY HAS JUST BEGUN
+        </div>
+
+        <div class="steps">
+
+            <div class="step completed">
+                <span>✅</span>
+                <strong>Stage 1</strong>
+                <small>First milestone completed</small>
+            </div>
+
+            <div class="step">
+                <span>⚙️</span>
+                <strong>Stage 2</strong>
+                <small>Next stage — coming soon</small>
+            </div>
+
+            <div class="step">
+                <span>🚀</span>
+                <strong>Stage 3</strong>
+                <small>Automated deployment goal</small>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            BUILT WITH DETERMINATION · POWERED BY CI/CD
+            <br /><br />
+            “Small steps. Big deployments.”
+        </div>
+
+    </main>
 </div>
+```
