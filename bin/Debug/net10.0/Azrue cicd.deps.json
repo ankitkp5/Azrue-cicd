@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Azrue cicd/1.0.0": {
+        "runtime": {
+          "Azrue cicd.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Azrue cicd/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
