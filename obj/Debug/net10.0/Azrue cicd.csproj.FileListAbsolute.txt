@@ -96,3 +96,4 @@ D:\Documents\MY DOCUMENTS\Project\Azrue cicd\obj\Debug\net10.0\refint\Azrue cicd
 D:\Documents\MY DOCUMENTS\Project\Azrue cicd\obj\Debug\net10.0\Azrue cicd.pdb
 D:\Documents\MY DOCUMENTS\Project\Azrue cicd\obj\Debug\net10.0\Azrue cicd.genruntimeconfig.cache
 D:\Documents\MY DOCUMENTS\Project\Azrue cicd\obj\Debug\net10.0\ref\Azrue cicd.dll
+D:\Documents\MY DOCUMENTS\Project\Azrue cicd\obj\Debug\net10.0\Azrue cicd.sourcelink.json
